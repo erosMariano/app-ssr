@@ -4,6 +4,10 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: '**',
     renderMode: RenderMode.Prerender
+  }, 
+  {
+    path: 'celulares',
+    renderMode: RenderMode.Server
   }
 ];
 

@@ -39,6 +39,7 @@ app.use(
  * Handle all other requests by rendering the Angular application.
  */
 app.use((req, res, next) => {
+  res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate'); // ← cache de 1h
   angularApp
     .handle(req)
     .then((response) =>

@@ -1,0 +1,291 @@
+<div class="swiper mdn-Swiper mdn-Swiper--default" id="planos">
+  <div class="swiper-wrapper mdn-Swiper-wrapper mdn-CardGroup">
+    @for (plano of planos; track plano.dados; let i = $index) {
+      <div class="swiper-slide mdn-Swiper-slide" [attr.data-swiper-slide-index]="i">
+        <div class="mdn-Card mdn-Card--default" data-tracking="">
+          <div class="mdn-Card-top mdn-Card-top--public">
+            <p>{{ plano.tipo }}</p>
+            <div class="mdn-Card-top-main-title">
+              <p class="mdn-Heading mdn-Heading--sm">{{ plano.dados }}</p>
+            </div>
+
+            @for (detalhe of plano.detalhes; track detalhe) {
+              <p>{{ detalhe }}</p>
+            }
+
+            <span class="price mdn-Text mdn-Text--body mdn-Text--xl mdn-Text--bold"
+              >R$ {{ plano.preco
+              }}<span class="mdn-Text mdn-Text--body mdn-Text--lg mdn-Text--medium"
+                >/mês*</span
+              ></span
+            >
+            <button class="mdn-Button mdn-Button--global mdn-Button--md mdn-Button--block">
+              Eu quero
+            </button>
+            <hr
+              class="mdn-Divider mdn-Divider--horizontal mdn-Divider--default mdn-is-initialized"
+            />
+            <div class="characteristics">
+              <div class="mdn-u-marginBottom--xs" data-automation="planappgroup">
+                <p
+                  class="mdn-Text mdn-Text--body mdn-u-marginBottom--xxs mdn-is-initialized"
+                  data-automation="planappgroup-name"
+                >
+                  App Claro tv+ e Globoplay por 30 dias
+                </p>
+
+                <div class="mdn-BrandGroup mdn-BrandGroup--sm mdn-u-justifyContent-xs-start">
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/32px-alternative/claro-tvmais.svg"
+                        alt="ClaroTV+"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          ClaroTV
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/globoplay.svg"
+                        alt="Globoplay"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          Globoplay
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="mdn-u-marginBottom--xs" data-automation="planappgroup">
+                <p
+                  class="mdn-Text mdn-Text--body mdn-u-marginBottom--xxs mdn-is-initialized"
+                  data-automation="planappgroup-name"
+                >
+                  WhatsApp Ilimitado
+                </p>
+
+                <div class="mdn-BrandGroup mdn-BrandGroup--sm mdn-u-justifyContent-xs-start">
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/whatsapp.svg"
+                        alt="WhatsApp"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          WhatsApp
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="mdn-u-marginBottom--xs" data-automation="planappgroup">
+                <p
+                  class="mdn-Text mdn-Text--body mdn-u-marginBottom--xxs mdn-is-initialized"
+                  data-automation="planappgroup-name"
+                >
+                  Redes Sociais e Apps
+                </p>
+
+                <div class="mdn-BrandGroup mdn-BrandGroup--sm mdn-u-justifyContent-xs-start">
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/instagram.svg"
+                        alt="Instagram"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          Instagram
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/facebook.svg"
+                        alt="Facebook"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          Facebook
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/tik-tok.svg"
+                        alt="TikTok"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          TikTok
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/twitter.svg"
+                        alt="X (Twitter)"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          X
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/youtube.svg"
+                        alt="YouTube"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          YouTube
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="mdn-u-marginBottom--xs" data-automation="planappgroup">
+                <p
+                  class="mdn-Text mdn-Text--body mdn-u-marginBottom--xxs mdn-is-initialized"
+                  data-automation="planappgroup-name"
+                >
+                  Apps exclusivos para você
+                </p>
+
+                <div class="mdn-BrandGroup mdn-BrandGroup--sm mdn-u-justifyContent-xs-start">
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/skeelo.svg"
+                        alt="Skeelo"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          Skeelo
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://mondrian.claro.com.br/brands/app/72px-default/claro-banca.svg"
+                        alt="Claro Banca"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          Claro Banca
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="mdn-u-marginBottom--xs" data-automation="planappgroup">
+                <p
+                  class="mdn-Text mdn-Text--body mdn-u-marginBottom--xxs mdn-is-initialized"
+                  data-automation="planappgroup-name"
+                >
+                  ChatGPT Plus incluso por 2 meses
+                </p>
+
+                <div class="mdn-BrandGroup mdn-BrandGroup--sm mdn-u-justifyContent-xs-start">
+                  <div class="mdn-BrandGroup-item mdn-u-marginRight--xxs">
+                    <figure class="mdn-BrandGroup-image">
+                      <img
+                        class="mdn-BrandGroup-image"
+                        src="https://planoscelular.claro.com.br/medias/chatgpt-icon.svg?context=bWFzdGVyfHJvb3R8MjQ2NHxpbWFnZS9zdmcreG1sfGFEa3lMMmc1WVM4eE1EUTNNVEEyTWpreU9UUXpPQzlqYUdGMFozQjBMV2xqYjI0dWMzWm58YTE0NWFmZjRmZDcxZWQxZjY3YzI0Y2RmMjE0MjFmZTAxODQ5NWIxNDM2NWNhNjUyOWUxM2I3ZWI0N2I0OGUwNA"
+                        alt="ChatGPT Plus"
+                      />
+                      <figcaption
+                        class="mdn-BrandGroup-image-caption mdn-Tooltip mdn-Tooltip--top mdn-is-initialized"
+                      >
+                        <p class="mdn-Text mdn-Text--caption mdn-Text--inverse mdn-is-initialized">
+                          CHAT GPT
+                        </p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mdn-Topic mdn-Topic--horizontal mdn-Topic--sm mdn-u-p-xs-0 mdn-u-marginBottom--xxs mdn-is-initialized"
+                data-automation="benefiticon"
+              >
+                <div class="mdn-Topic-symbol d-sm-flex d-xs-block">
+                  <i aria-hidden="true" class="mdn-Icon-telefone-ligacoes mdn-Icon--md"></i>
+                </div>
+                <p
+                  class="mdn-Topic-description mdn-u-w-100 mdn-Text--body"
+                  data-automation="benefiticon-description"
+                >
+                  Ligações ilimitadas
+                </p>
+              </div>
+              <a class="mdn-Link link-card" [href]="plano.linkDetalhes" target="_self"
+                >Mais Detalhes <em class="mdn-Link-anchor-icon mdn-Icon-direita mdn-Icon--sm"></em
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+  <div class="mdn-Swiper-pagination-custom">
+    <div class="mdn-Swiper-button-prev mdn-Swiper-button-prev-planos">
+      <i aria-hidden="true" class="mdn-Icon-esquerda mdn-Icon--lg"></i>
+    </div>
+    <div class="mdn-Swiper-button-next mdn-Swiper-button-next-planos">
+      <i aria-hidden="true" class="mdn-Icon-direita mdn-Icon--lg"></i>
+    </div>
+  </div>
+</div>

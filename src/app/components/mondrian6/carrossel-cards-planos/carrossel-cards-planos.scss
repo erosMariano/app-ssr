@@ -1,0 +1,36 @@
+.mdn-Card{
+  transition: .3s linear;
+  border: 1px solid #e0e0e0;
+
+  &:hover{
+    border: 1px solid red;
+  }
+  font-family: "Roboto", sans-serif;
+  p{
+    color: #1f1d1d;
+  }
+  .mdn-Heading{
+    margin-top: 10px;
+  }
+  .price {
+    display: block;
+    margin: 9px 0 44px;
+  }
+  .mdn-u-marginBottom--xs {
+    margin-bottom: 12px;
+  }
+  .mdn-u-marginBottom--xxs {
+    margin-bottom: 8px;
+  }
+  .mdn-BrandGroup {
+    gap: 8px;
+  }
+  .mdn-u-justifyContent-xs-start {
+    justify-content: flex-start;
+  }
+
+  .link-card {
+    padding: 0 0 24px 0px;
+    margin-top: 60px;
+  }
+}

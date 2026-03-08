@@ -1,0 +1,48 @@
+.section-plans {
+  padding: 0 16px;
+  background-color: #f9f9f9;
+
+  &.no-bg {
+    background-color: #fff;
+  }
+
+  .container-plans {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .mdn-Row {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .plans-header {
+    max-width: 25%;
+    min-width: 25%;
+    width: 100%;
+    padding: 0 20px;
+
+    h2 {
+      margin: 100px 0 24px 0;
+    }
+  }
+}
+
+.link-plano {
+  color: #da291c;
+  margin-bottom: 34px;
+  display: block;
+}
+
+.container-cards {
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+  margin-top: 16px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

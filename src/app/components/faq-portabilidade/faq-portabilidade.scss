@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.text-accordion{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span{
+    color: var(--theme-color-brand-primary-medium-content) !important;
+  }
+}

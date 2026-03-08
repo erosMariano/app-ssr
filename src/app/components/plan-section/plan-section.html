@@ -1,0 +1,18 @@
+<section class="section-plans" [class.no-bg]="fundo === 'branco'">
+  <div class="container-plans mdn-Container-fluid mdn-Container">
+    <div class="plans-header">
+      <h2 class="titulo-plano mdn-Subtitle mdn-Subtitle--xs">{{ titulo }}</h2>
+      <strong class="mensagem-plano mdn-Heading mdn-Heading--lg">{{ subtitulo }}</strong>
+      <a
+        class="mdn-Text mdn-Text--body mdn-Text--sm mdn-Text--medium link-plano"
+        [routerLink]="link"
+        >{{ linkTexto }} ></a
+      >
+    </div>
+
+    <div class="container-cards">
+      <app-success-light />
+      <ng-content />
+    </div>
+  </div>
+</section>

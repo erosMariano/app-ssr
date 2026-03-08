@@ -7,9 +7,14 @@ export const routes: Routes = [
     component: Home,
   },
 
-  { path: 'celulares', 
-    loadComponent: () => import('./pages/celulares/celulares').then(m => m.Celulares)
-   },
+  {
+    path: 'celulares',
+    loadComponent: () => import('./pages/celulares/celulares').then((m) => m.Celulares),
+  },
+  {
+    path: 'celulares2',
+    loadComponent:() => import('./pages/celulares2/celulares').then((m) => m.Celulares),
+  },
   {
     path: '**',
     redirectTo: '',

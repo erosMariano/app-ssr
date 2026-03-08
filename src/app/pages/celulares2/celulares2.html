@@ -1,0 +1,15 @@
+<div class="celulares-container">
+  <h1 class="celulares-title">Celulares</h1>
+
+  <div class="products-grid">
+    @for (product of products(); track product.id) {
+      <div class="product-card">
+        <span class="product-id">ID: {{ product.id }}</span>
+        <h3 class="product-title">{{ product.title }}</h3>
+        <p class="product-price">R$ {{ product.price | number: '1.2-2' }}</p>
+      </div>
+    }
+  </div>
+</div>
+
+<app-carrossel-cards-aparelhos />
